@@ -23,7 +23,7 @@ arch=('x86_64')
 url="https://github.com/necroflasher/libflashsupport-pulse-mod"
 license=('unknown')
 depends=('libpulse')
-makedepends=('git' 'gcc-multilib' 'make')
+makedepends=('git' 'make')
 provides=('libflashsupport')
 conflicts=('libflashsupport')
 source=("git+https://github.com/necroflasher/libflashsupport-pulse-mod.git")
@@ -36,7 +36,7 @@ pkgver() {
 
 build() {
   cd "$srcdir/${pkgname%-git}"
-  make
+  make libflashsupport.so
 }
 
 package() {
