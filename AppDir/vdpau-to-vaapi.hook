@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# Use VDPAU on Nvidia, VDPAU-to-VAAPI on others
+[ -e /sys/module/nvidia/version ] || export VDPAU_DRIVER=va_gl
