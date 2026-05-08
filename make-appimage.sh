@@ -15,7 +15,9 @@ export DEPLOY_PULSE=1
 
 # Deploy dependencies
 quick-sharun /usr/bin/flashplayer \
-             /usr/lib/libflashsupport.so
+             /usr/lib/libflashsupport.so \
+             /usr/lib/libvdpau.so* \
+             /usr/lib/vdpau
 
 # Additional changes can be done in between here
 
