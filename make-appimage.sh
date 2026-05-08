@@ -8,7 +8,7 @@ export ARCH VERSION
 export OUTPATH=./dist
 export ADD_HOOKS="self-updater.hook"
 export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}|latest|*$ARCH.AppImage.zsync"
-export ICON=adobe-flash.svg
+export ICON=flashplayer.svg
 export DESKTOP=/usr/share/applications/flashplayer-standalone.desktop
 export DEPLOY_OPENGL=1
 export DEPLOY_PULSE=1
