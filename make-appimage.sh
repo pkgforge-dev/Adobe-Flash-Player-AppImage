@@ -14,7 +14,8 @@ export DEPLOY_OPENGL=1
 export DEPLOY_PULSE=1
 
 # Deploy dependencies
-quick-sharun /usr/bin/flashplayer
+quick-sharun /usr/bin/flashplayer \
+             /usr/lib/libflashsupport.so
 
 # Additional changes can be done in between here
 
