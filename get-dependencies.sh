@@ -13,10 +13,10 @@ echo "---------------------------------------------------------------"
 get-debloated-pkgs --add-common --prefer-nano
 
 # Comment this out if you need an AUR package
-make-aur-package gtk2
 echo '# Maintainer: Fifty Dinar <somemail@lol.com>
 
 pkgname=libflashsupport-pulse-mod-git
+pkgver=1.0
 pkgrel=1
 pkgdesc="Improved sound output library for flash player on linux (PulseAudio mod)"
 arch=('x86_64')
@@ -45,6 +45,7 @@ package() {
 }' > ./PKGBUILD
 make-aur-package
 rm ./PKGBUILD
+make-aur-package gtk2
 make-aur-package flashplayer-standalone
 
 # If the application needs to be manually built that has to be done down here
