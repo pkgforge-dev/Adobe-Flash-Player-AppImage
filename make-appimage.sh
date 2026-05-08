@@ -20,6 +20,8 @@ quick-sharun /usr/bin/flashplayer \
              /usr/lib/vdpau
 
 # Additional changes can be done in between here
+# Use VAAPI driver for VDPAU to cover most GPUs (Adobe Flash is VDPAU-only)
+echo 'VDPAU_DRIVER=va_gl' >> ./AppDir/.env
 
 # Turn AppDir into AppImage
 quick-sharun --make-appimage
