@@ -6,7 +6,7 @@ ARCH=$(uname -m)
 
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
-pacman -Syu --noconfirm libvdpau
+pacman -Syu --noconfirm libvdpau libvdpau-va-gl
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
