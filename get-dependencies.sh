@@ -44,6 +44,7 @@ package() {
   install -Dm755 libflashsupport.so "$pkgdir/usr/lib/libflashsupport.so"
 }' > ./PKGBUILD
 make-aur-package
+find /usr/lib | grep libflashsupport
 rm ./PKGBUILD
 make-aur-package gtk2
 make-aur-package flashplayer-standalone
