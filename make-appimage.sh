@@ -9,7 +9,7 @@ export OUTPATH=./dist
 export ADD_HOOKS="self-updater.hook"
 export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}|latest|*$ARCH.AppImage.zsync"
 export ICON="https://upload.wikimedia.org/wikipedia/commons/1/1f/Adobe_Flash_Player_v10_icon.png"
-export DESKTOP=/usr/share/applications/flashplayer.desktop
+export DESKTOP=/usr/share/applications/flashplayer-standalone.desktop
 export DEPLOY_OPENGL=1
 
 # Deploy dependencies
