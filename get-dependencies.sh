@@ -46,7 +46,7 @@ package() {
 make-aur-package
 find /usr/lib | grep libflashsupport
 rm ./PKGBUILD
-make-aur-package gtk2
+make-aur-package gtk2-ng-git
 make-aur-package flashplayer-standalone
 
 # If the application needs to be manually built that has to be done down here
