@@ -44,10 +44,12 @@ package() {
   install -Dm755 libflashsupport.so "$pkgdir/usr/lib/libflashsupport.so"
 }' > ./PKGBUILD
 make-aur-package
+echo
 find /usr/lib | grep libflashsupport
+echo
 rm ./PKGBUILD
-make-aur-package gtk2-ng-git
-PRE_BUILD_CMDS="sed -i 's|gtk2|gtk2-ng-git|g' ./PKGBUILD" make-aur-package flashplayer-standalone
+PRE_BUILD_CMDS="sed -i 's|  provides=(|provides+=(|g' ./PKGBUILD" make-aur-package gtk2-ng-git
+make-aur-package flashplayer-standalone
 
 # If the application needs to be manually built that has to be done down here
 
