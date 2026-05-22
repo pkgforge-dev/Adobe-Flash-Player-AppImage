@@ -10,7 +10,7 @@ pacman -Syu --noconfirm libvdpau libvdpau-va-gl
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
-get-debloated-pkgs --add-common --prefer-nano gtk2-mini
+get-debloated-pkgs --add-common --prefer-nano gtk2-mini ! gtk3 ! gtk4
 
 # Comment this out if you need an AUR package
 echo '# Maintainer: Fifty Dinar <somemail@lol.com>
@@ -46,7 +46,6 @@ package() {
 make-aur-package
 find /usr/lib | grep libflashsupport
 rm ./PKGBUILD
-make-aur-package gtk2
 make-aur-package flashplayer-standalone
 
 # If the application needs to be manually built that has to be done down here
